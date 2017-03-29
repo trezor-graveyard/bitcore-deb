@@ -1,0 +1,13 @@
+Source: satoshilabs-bitcore
+Section: satoshilabs
+Priority: optional
+Maintainer: root@ivirtspot.net
+Build-Depends: nodejs (>= 4), nodejs (<< 5), make, build-essential, libzmq3-dev, curl, python, dh-systemd
+Standards-Version: 3.9.5
+
+Package: satoshilabs-bitcore
+Architecture: amd64
+Pre-Depends: curl, apt-transport-https
+Conflicts: bitcoind, bitcore
+Depends: libzmq3, nodejs (>= 4), nodejs (<< 5), python, adduser, sudo
+Description: Satoshilabs packaged bitcore server

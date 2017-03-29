@@ -1,0 +1,14 @@
+to build run make
+	requires make & docker.io
+	deb package will appear in directory with Makefile
+	1st install with
+		# apt-get install apt-transport-https && dpkg -i <package_name>
+		# apt-get update && apt-get -f install
+	upgrade:
+		# dpkg -i <package_name>
+		# apt-get update && apt-get -f install
+
+to change to a new bitcore version
+	change version in git checkout in satoshilabs-bitcore/Makefile
+	create a new entry in satoshilabs-bitcore/debian/changelog
+	then build as usual
