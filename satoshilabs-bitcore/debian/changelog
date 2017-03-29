@@ -1,4 +1,4 @@
-satoshilabs-bitcore (3.2.0~satoshilabs2ubuntu1) unstable; urgency=medium
+satoshilabs-bitcore (3.2.0~satoshilabs1) unstable; urgency=medium
 
   * using satoshilabs' fork of bitcore with improved workqueue
   * install config and mark it as conffile
