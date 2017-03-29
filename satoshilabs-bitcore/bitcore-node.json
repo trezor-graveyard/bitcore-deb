@@ -1,0 +1,28 @@
+{
+  "network": "livenet",
+  "port": 3001,
+  "services": [
+    "bitcoind",
+    "web",
+    "insight-api",
+    "insight-ui"
+  ],
+  "servicesConfig": {
+    "insight-ui": {
+      "routePrefix": "",
+      "apiPrefix": "api"
+    },
+    "insight-api": {
+      "routePrefix": "api"
+    },
+    "bitcoind": {
+	  "sendTxLog": "/opt/satoshilabs/bitcore3/home/.bitcore/pushtx.log",
+      "spawn": {
+        "datadir": "/opt/satoshilabs/bitcore3/home/.bitcore/data",
+        "exec": "/opt/satoshilabs/bitcore3/bitcore/node_modules/bitcore-node/bin/bitcoind",
+	    "rpcqueue": 10000
+      }
+    }
+  }
+}
+

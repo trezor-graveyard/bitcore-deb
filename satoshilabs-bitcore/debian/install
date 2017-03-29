@@ -2,3 +2,4 @@ bitcore /opt/satoshilabs/bitcore3
 bitcoin-cli /usr/bin
 bitcoind /usr/bin
 bitcoin.conf /opt/satoshilabs/bitcore3/home/.bitcore/data
+bitcore-node.json /opt/satoshilabs/bitcore3/home/.bitcore

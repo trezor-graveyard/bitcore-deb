@@ -1,3 +1,11 @@
+satoshilabs-bitcore (3.2.0~satoshilabs2ubuntu1) unstable; urgency=medium
+
+  * using satoshilabs' fork of bitcore with improved workqueue
+  * install config and mark it as conffile
+    /opt/satoshilabs/bitcore3/home/.bitcore/bitcore-node.json
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Wed, 29 Mar 2017 23:56:46 +0200
+
 satoshilabs-bitcore (3.1.3~satoshilabs2) unstable; urgency=low
 
   * install support scripts to /usr/bin (bitcoind, bitcoin-cli)
