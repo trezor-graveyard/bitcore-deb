@@ -1,0 +1,12 @@
+[Unit]
+Description=Satoshilabs bitcore-testnet
+
+[Service]
+ExecStart=/opt/satoshilabs/bitcore-testnet/bitcore/bin/bitcored
+Restart=always
+RestartSec=5
+User=bitcore-testnet
+WorkingDirectory=/opt/satoshilabs/bitcore-testnet/home
+
+[Install]
+WantedBy=multi-user.target
