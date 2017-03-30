@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER root@ivirtspot.net
+MAINTAINER slush@satoshilabs.com
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV HOME /root
@@ -12,6 +12,6 @@ RUN apt-get update && \
     curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 RUN apt-get update && \
     apt-get -qy install nodejs python make build-essential libzmq3-dev devscripts dh-systemd
-ADD satoshilabs-bitcore/ /root/satoshilabs-bitcore
-RUN ( cd /root/satoshilabs-bitcore && debuild -uc -us )
+ADD bitcore-btc/ /root/bitcore-btc
+RUN ( cd /root/bitcore-btc && debuild -uc -us )
 

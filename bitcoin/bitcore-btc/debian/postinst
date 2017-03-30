@@ -2,9 +2,9 @@
 
 case "$1" in
 	configure)
-		adduser --system --home /opt/satoshilabs/bitcore3/home \
-			--quiet --gecos "satoshilabs bitcore3" bitcore3
-		chown -R bitcore3 /opt/satoshilabs/bitcore3/home
+		adduser --system --home /opt/satoshilabs/bitcore-btc/home \
+			--quiet --gecos "satoshilabs bitcore-btc" bitcore-btc
+		chown -R bitcore-btc /opt/satoshilabs/bitcore-btc/home
 		;;
 	abort-upgrade|abort-remove|abort-deconfigure)
 	;;

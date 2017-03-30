@@ -1,0 +1,5 @@
+bitcore /opt/satoshilabs/bitcore-btc
+bitcore-btc-cli /usr/bin
+bitcore-btc-daemon /usr/bin
+bitcoin.conf /opt/satoshilabs/bitcore-btc/home/.bitcore/data
+bitcore-node.json /opt/satoshilabs/bitcore-btc/home/.bitcore

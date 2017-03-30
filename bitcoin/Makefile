@@ -1,4 +1,4 @@
-IMG_NAME=bitcore3_build
+IMG_NAME=bitcore_build
 NO_CACHE=false
 
 .PHONY: clean
@@ -6,9 +6,9 @@ NO_CACHE=false
 all:
 	docker build --no-cache=$(NO_CACHE) --rm -t "$(IMG_NAME)" .
 	docker run --name="$(IMG_NAME)" -d "$(IMG_NAME)" /bin/true
-	docker export bitcore3_build | tar --wildcards -x 'root/*.deb'
-	docker rm bitcore3_build
-	docker rmi bitcore3_build
+	docker export bitcore_build | tar --wildcards -x 'root/*.deb'
+	docker rm bitcore_build
+	docker rmi bitcore_build
 	mv ./root/*.deb .
 	rmdir ./root
 

@@ -1,9 +1,0 @@
-#! /bin/sh -e
-
-case "$1" in
-	purge)
-		rm -f /etc/apt/sources.list.d/satoshilabs-bitcore-nodesource.list
-		deluser bitcore3 || true
-		;;
-esac
-

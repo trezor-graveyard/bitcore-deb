@@ -2,8 +2,8 @@
 
 case "$1" in
 	install|upgrade)
-		echo '# installed by satoshilabs-bitcore package' > /etc/apt/sources.list.d/satoshilabs-bitcore-nodesource.list
-		echo 'deb https://deb.nodesource.com/node_4.x jessie main' >> /etc/apt/sources.list.d/satoshilabs-bitcore-nodesource.list
+		echo '# installed by bitcore-btc package' > /etc/apt/sources.list.d/bitcore-btc-nodesource.list
+		echo 'deb https://deb.nodesource.com/node_4.x jessie main' >> /etc/apt/sources.list.d/bitcore-btc-nodesource.list
 		curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 		;;
 	abort-upgrade)

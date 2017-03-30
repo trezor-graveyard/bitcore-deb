@@ -16,10 +16,10 @@
       "routePrefix": "api"
     },
     "bitcoind": {
-      "sendTxLog": "/opt/satoshilabs/bitcore3/home/.bitcore/pushtx.log",
+      "sendTxLog": "/opt/satoshilabs/bitcore-btc/home/.bitcore/pushtx.log",
       "spawn": {
-        "datadir": "/opt/satoshilabs/bitcore3/home/.bitcore/data",
-        "exec": "/opt/satoshilabs/bitcore3/bitcore/node_modules/bitcore-node/bin/bitcoind",
+        "datadir": "/opt/satoshilabs/bitcore-btc/home/.bitcore/data",
+        "exec": "/opt/satoshilabs/bitcore-btc/bitcore/node_modules/bitcore-node/bin/bitcoind",
         "rpcqueue": 1000
       }
     }
