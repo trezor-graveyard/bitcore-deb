@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+INSTALL_PATH="/opt/satoshilabs/bitcore-btc/"
+BIN=$(realpath "$INSTALL_PATH"/bitcore/node_modules/bitcore-node/bin/bitcoin-*/bin/)
+DATA="$INSTALL_PATH/home/.bitcore/data"
+CONF="$DATA/bitcoin.conf"
+
+exec "$BIN"/bitcoin-cli --conf="$CONF" --datadir="$DATA" "$@"
+
