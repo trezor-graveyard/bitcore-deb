@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+INSTALL_PATH="/opt/satoshilabs/bitcore-ltc/"
+BIN=$(realpath "$INSTALL_PATH"/bitcore/node_modules/litecore-node/bin/litecoin-*/bin/)
+DATA="$INSTALL_PATH/home/.litecoin/data"
+CONF="$DATA/litecoin.conf"
+
+exec sudo -u bitcore-ltc "$BIN/litecoind" --conf="$CONF" --datadir="$DATA" "$@"
+

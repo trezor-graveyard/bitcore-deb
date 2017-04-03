@@ -1,12 +1,12 @@
 [Unit]
-Description=Satoshilabs bitcore-btc
+Description=Satoshilabs bitcore-ltc
 
 [Service]
-ExecStart=/opt/satoshilabs/bitcore-btc/bitcore/bin/bitcored
+ExecStart=/opt/satoshilabs/bitcore-ltc/bitcore/bin/litecored
 Restart=always
 RestartSec=5
-User=bitcore-btc
-WorkingDirectory=/opt/satoshilabs/bitcore-btc/home
+User=bitcore-ltc
+WorkingDirectory=/opt/satoshilabs/bitcore-ltc/home
 
 [Install]
 WantedBy=multi-user.target

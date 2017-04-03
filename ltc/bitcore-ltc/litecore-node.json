@@ -1,0 +1,31 @@
+{
+  "network": "livenet",
+  "port": 3004,
+  "services": [
+    "bitcoind",
+    "web",
+    "insight-lite-api",
+    "insight-lite-ui"
+  ],
+  "servicesConfig": {
+    "insight-lite-ui": {
+      "routePrefix": "",
+      "apiPrefix": "api"
+    },
+    "insight-lite-api": {
+      "routePrefix": "api"
+    },
+    "bitcoind": {
+      "sendTxLog": "/opt/satoshilabs/bitcore-ltc/home/.litecoin/pushtx.log",
+      "spawn": {
+        "datadir": "/opt/satoshilabs/bitcore-ltc/home/.litecoin/data",
+        "exec": "/opt/satoshilabs/bitcore-ltc/bitcore/node_modules/litecore-node/bin/litecoind",
+        "rpcqueue": 1000,
+        "rpcport": 8334,
+        "zmqpubrawtx": "tcp://127.0.0.1:28334",
+        "zmqpubhashblock": "tcp://127.0.0.1:28334"
+      }
+    }
+  }
+}
+

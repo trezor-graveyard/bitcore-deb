@@ -1,11 +1,11 @@
-Source: bitcore-btc
+Source: bitcore-ltc
 Section: satoshilabs
 Priority: optional
 Maintainer: slush@satoshilabs.com
 Build-Depends: nodejs (>= 4), nodejs (<< 5), make, build-essential, libzmq3-dev, curl, python, dh-systemd
 Standards-Version: 3.9.5
 
-Package: bitcore-btc
+Package: bitcore-ltc
 Architecture: amd64
 Pre-Depends: curl, apt-transport-https
 Conflicts: bitcoind, bitcore

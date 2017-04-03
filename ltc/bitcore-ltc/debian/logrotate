@@ -1,4 +1,4 @@
-/opt/satoshilabs/bitcore-btc/home/.bitcore/data/debug.log {
+/opt/satoshilabs/bitcore-ltc/home/.litecoin/data/debug.log {
         rotate 7
         daily
         compress
