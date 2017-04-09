@@ -12,6 +12,7 @@ RUN apt-get update && \
     curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 RUN apt-get update && \
     apt-get -qy install nodejs python make build-essential libzmq3-dev devscripts dh-systemd
+RUN npm install -g yarn
 ADD bitcore-ltc/ /root/bitcore-ltc
 RUN ( cd /root/bitcore-ltc && debuild -uc -us )
 
