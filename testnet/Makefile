@@ -9,7 +9,7 @@ all:
 	docker export bitcore_build | tar --wildcards -x 'root/*.deb'
 	docker rm bitcore_build
 	docker rmi bitcore_build
-	mv ./root/*.deb ../
+	mv ./root/*.deb ./
 	rmdir ./root
 
 clean:
