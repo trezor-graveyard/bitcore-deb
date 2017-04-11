@@ -1,4 +1,4 @@
-/opt/satoshilabs/bitcore-testnet/home/.bitcore/data/testne3/debug.log {
+/opt/satoshilabs/bitcore-testnet/home/.bitcore/data/testnet3/debug.log {
         rotate 7
         daily
         compress
