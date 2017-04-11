@@ -3,3 +3,4 @@ bitcore-ltc-cli /usr/bin
 bitcore-ltc-daemon /usr/bin
 bitcoin.conf /opt/satoshilabs/bitcore-ltc/home/.litecoin/data
 litecore-node.json /opt/satoshilabs/bitcore-ltc/home/.litecoin
+nginx-bitcore-ltc /etc/nginx/sites-available

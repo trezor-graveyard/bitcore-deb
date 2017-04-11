@@ -9,5 +9,5 @@ Package: bitcore-testnet
 Architecture: amd64
 Pre-Depends: curl, apt-transport-https
 Conflicts: bitcoind, bitcore
-Depends: libzmq3, nodejs (>= 4), nodejs (<< 5), python, adduser, sudo
+Depends: nginx, ssl-cert, libzmq3, nodejs (>= 4), nodejs (<< 5), python, adduser, sudo
 Description: Satoshilabs packaged bitcore server

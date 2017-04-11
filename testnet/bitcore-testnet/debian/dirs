@@ -1,2 +1,3 @@
 usr/local/bin
 opt/satoshilabs/bitcore-testnet/home/.bitcore/
+etc/nginx/sites-available/

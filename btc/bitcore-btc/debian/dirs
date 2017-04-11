@@ -1,2 +1,3 @@
+etc/nginx/sites-available/
 usr/local/bin
 opt/satoshilabs/bitcore-btc/home/.bitcore/

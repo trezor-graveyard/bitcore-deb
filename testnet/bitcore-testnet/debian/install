@@ -3,3 +3,4 @@ bitcore-testnet-cli /usr/bin
 bitcore-testnet-daemon /usr/bin
 bitcoin.conf /opt/satoshilabs/bitcore-testnet/home/.bitcore/data
 bitcore-node.json /opt/satoshilabs/bitcore-testnet/home/.bitcore
+nginx-bitcore-testnet /etc/nginx/sites-available

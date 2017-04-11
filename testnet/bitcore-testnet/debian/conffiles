@@ -1,2 +1,3 @@
 /opt/satoshilabs/bitcore-testnet/home/.bitcore/data/bitcoin.conf
 /opt/satoshilabs/bitcore-testnet/home/.bitcore/bitcore-node.json
+/etc/nginx/sites-available/nginx-bitcore-testnet

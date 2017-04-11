@@ -1,3 +1,9 @@
+bitcore-btc (4.2.0~satoshilabs1) unstable; urgency=medium
+
+  * Added nginx configuration
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Mon, 10 Apr 2017 16:55:37 +0200
+
 bitcore-btc (4.1.0~satoshilabs1) unstable; urgency=medium
 
   * Upgrade to Core 0.14
