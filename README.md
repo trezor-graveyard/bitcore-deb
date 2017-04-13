@@ -41,3 +41,14 @@ Prerequisite is having github repo with forked Insight for given coin. Things ma
 * Add new line to debian changelog (use dch -i)
 * Modify installation procedure in bitcore-btc/Makefile, at least replace link to github repository.
 * Search for all "bitcoin" strings and consider if they need to be updated for given coin.
+* Update registry below
+
+Registry of ports
+-----------------
+
+| coin    | insight port | RPC port | zmq port |
+|---------|--------------|----------|----------|
+| btc     | 3001         |  8332    | 28332    |
+| test    | 3002         | 18332    | 28333    |
+| ltc     | 3004         |  8334    | 28334    |
+| regtest | 3005         | 18335    | 28335    |

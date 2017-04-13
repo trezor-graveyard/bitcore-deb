@@ -1,0 +1,3 @@
+usr/local/bin
+opt/satoshilabs/bitcore-regtest/home/.bitcore/
+etc/nginx/sites-available/

@@ -1,0 +1,21 @@
+#! /bin/sh -e
+
+case "$1" in
+	configure)
+		adduser --system --home /opt/satoshilabs/bitcore-regtest/home \
+			--quiet --gecos "satoshilabs bitcore-regtest" bitcore-regtest
+		chown -R bitcore-regtest /opt/satoshilabs/bitcore-regtest/home
+		;;
+	abort-upgrade|abort-remove|abort-deconfigure)
+	;;
+	
+	*)
+	    echo "postinst called with unknown argument \`$1'" >&2
+	    exit 1
+	;;
+esac
+
+
+#DEBHELPER#
+
+exit 0

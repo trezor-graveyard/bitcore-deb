@@ -1,0 +1,9 @@
+/opt/satoshilabs/bitcore-regtest/home/.bitcore/data/testne3/debug.log {
+        rotate 7
+        daily
+        compress
+        missingok
+        notifempty
+        copytruncate
+}
+

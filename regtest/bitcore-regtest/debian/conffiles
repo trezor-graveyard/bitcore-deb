@@ -1,0 +1,3 @@
+/opt/satoshilabs/bitcore-regtest/home/.bitcore/data/bitcoin.conf
+/opt/satoshilabs/bitcore-regtest/home/.bitcore/bitcore-node.json
+/etc/nginx/sites-available/nginx-bitcore-regtest

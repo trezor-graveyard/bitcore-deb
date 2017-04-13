@@ -1,0 +1,6 @@
+bitcore /opt/satoshilabs/bitcore-regtest
+bitcore-regtest-cli /usr/bin
+bitcore-regtest-daemon /usr/bin
+bitcoin.conf /opt/satoshilabs/bitcore-regtest/home/.bitcore/data
+bitcore-node.json /opt/satoshilabs/bitcore-regtest/home/.bitcore
+nginx-bitcore-regtest /etc/nginx/sites-available
