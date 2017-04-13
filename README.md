@@ -14,8 +14,8 @@ First installation on target machine
 
 Upgrade on target machine
 -------------------------
-* # dpkg -i <package_name>
-* # apt-get update && apt-get -f install
+* ```dpkg -i <package_name>```
+* ```apt-get update && apt-get -f install```
 
 
 Updating bitcore version for coin
