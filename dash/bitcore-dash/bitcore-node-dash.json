@@ -1,6 +1,6 @@
 {
   "network": "livenet",
-  "port": 3005,
+  "port": 3006,
   "services": [
     "bitcoind",
     "web",
@@ -21,10 +21,10 @@
         "datadir": "/opt/satoshilabs/bitcore-dash/home/.bitcore/data",
         "exec": "/opt/satoshilabs/bitcore-dash/bitcore/node_modules/bitcore-node-dash/bin/dashd",
         "rpcqueue": 1000,
-        "rpcport": 8335,
-        "zmqpubrawtx": "tcp://127.0.0.1:28335",
-        "zmqpubrawtxlock": "tcp://127.0.0.1:28335",
-        "zmqpubhashblock": "tcp://127.0.0.1:28335"
+        "rpcport": 8336,
+        "zmqpubrawtx": "tcp://127.0.0.1:28336",
+        "zmqpubrawtxlock": "tcp://127.0.0.1:28336",
+        "zmqpubhashblock": "tcp://127.0.0.1:28336"
       }
     }
   }
