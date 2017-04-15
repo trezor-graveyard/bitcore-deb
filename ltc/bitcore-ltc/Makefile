@@ -7,6 +7,7 @@ all:
 	rm -rf bitcore/node_modules/litecore-node/bin/*.gz
 	rm -rf bitcore/node_modules/litecore-node/bin/litecoin-*/bin/litecoin-qt
 	rm -rf bitcore/node_modules/litecore-node/bin/litecoin-*/bin/test_litecoin
+	rm -rf bitcore/node_modules/litecore-node/test/*
 
 
 clean:

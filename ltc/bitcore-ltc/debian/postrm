@@ -2,7 +2,6 @@
 
 case "$1" in
 	purge)
-		rm -f /etc/apt/sources.list.d/bitcore-ltc-nodesource.list
 		deluser bitcore-ltc || true
 		;;
 esac

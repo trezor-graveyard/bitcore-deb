@@ -30,7 +30,7 @@ Prerequisite is having github repo with forked Insight for given coin. Things ma
 
 * Copy "btc" directory to <coin>/
 * Replace "bitcore-btc" by "bitcore-<altcoin>" everywhere: ```find ./ -type f -readable -writable -exec sed -i "s/bitcore-btc/bitcore-<coin>/g" {} \;```
-* Rename all files and folders from "bitcore-btc*" to "bitcore-<coin>*": ```find ./ -readable -writable -name "bitcore-btc*" -exec rename 's/bitcore-btc/bitcore-<coin>/' {} \;```
+* Rename all files and folders from "bitcore-btc*" to "bitcore-<coin>*": ```find ./ -readable -writable -name "*bitcore-btc*" -exec rename 's/bitcore-btc/bitcore-<coin>/' {} \;```
 * Update bitcoin.conf:
   * Change rpcport
   * Change ports in zmqpubrawtx, zmqpubrawtx

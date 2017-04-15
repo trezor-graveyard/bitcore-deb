@@ -2,7 +2,6 @@
 
 case "$1" in
 	purge)
-		rm -f /etc/apt/sources.list.d/bitcore-testnet-nodesource.list
 		deluser bitcore-testnet || true
 		;;
 esac
