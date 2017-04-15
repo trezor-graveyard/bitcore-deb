@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name ~ltc-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
+    server_name ~^ltc-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
 
     root /home/bitcore/www;
     access_log /var/log/nginx/bitcore-ltc-access.log;
@@ -25,7 +25,7 @@ server {
 
 server {
     listen 443 ssl;
-    server_name ~ltc-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
+    server_name ~^ltc-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
 
     root /home/bitcore/www;
     access_log /var/log/nginx/bitcore-ltc-access.log;
