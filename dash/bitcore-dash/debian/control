@@ -1,0 +1,13 @@
+Source: bitcore-dash
+Section: satoshilabs
+Priority: optional
+Maintainer: slush@satoshilabs.com
+Build-Depends: nodejs (>= 4), nodejs (<< 5), make, build-essential, libzmq3-dev, curl, python, dh-systemd
+Standards-Version: 3.9.5
+
+Package: bitcore-dash
+Architecture: amd64
+Pre-Depends: curl, apt-transport-https
+Conflicts: bitcoind, bitcore
+Depends: nginx, ssl-cert, libzmq3, nodejs (>= 4), nodejs (<< 5), python, adduser, sudo
+Description: Satoshilabs packaged bitcore server

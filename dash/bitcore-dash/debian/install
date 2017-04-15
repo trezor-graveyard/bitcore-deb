@@ -1,0 +1,6 @@
+bitcore /opt/satoshilabs/bitcore-dash
+bitcore-dash-cli /usr/bin
+bitcore-dash-daemon /usr/bin
+dash.conf /opt/satoshilabs/bitcore-dash/home/.bitcore/data
+bitcore-node-dash.json /opt/satoshilabs/bitcore-dash/home/.bitcore
+nginx-bitcore-dash /etc/nginx/sites-available

@@ -1,0 +1,32 @@
+{
+  "network": "livenet",
+  "port": 3005,
+  "services": [
+    "bitcoind",
+    "web",
+    "insight-api-dash",
+    "insight-ui-dash"
+  ],
+  "servicesConfig": {
+    "insight-ui-dash": {
+      "routePrefix": "",
+      "apiPrefix": "api"
+    },
+    "insight-api-dash": {
+      "routePrefix": "api"
+    },
+    "bitcoind": {
+      "sendTxLog": "/opt/satoshilabs/bitcore-dash/home/.bitcore/pushtx.log",
+      "spawn": {
+        "datadir": "/opt/satoshilabs/bitcore-dash/home/.bitcore/data",
+        "exec": "/opt/satoshilabs/bitcore-dash/bitcore/node_modules/bitcore-node-dash/bin/dashd",
+        "rpcqueue": 1000,
+        "rpcport": 8335,
+        "zmqpubrawtx": "tcp://127.0.0.1:28335",
+        "zmqpubrawtxlock": "tcp://127.0.0.1:28335",
+        "zmqpubhashblock": "tcp://127.0.0.1:28335"
+      }
+    }
+  }
+}
+

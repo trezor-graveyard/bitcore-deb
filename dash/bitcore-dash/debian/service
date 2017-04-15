@@ -1,0 +1,12 @@
+[Unit]
+Description=Satoshilabs bitcore-dash
+
+[Service]
+ExecStart=/opt/satoshilabs/bitcore-dash/bitcore/bin/bitcored
+Restart=always
+RestartSec=5
+User=bitcore-dash
+WorkingDirectory=/opt/satoshilabs/bitcore-dash/home
+
+[Install]
+WantedBy=multi-user.target

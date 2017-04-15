@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+INSTALL_PATH="/opt/satoshilabs/bitcore-dash/"
+BIN=$(realpath "$INSTALL_PATH"/bitcore/node_modules/bitcore-node-dash/bin/dashcore-*/bin/)
+DATA="$INSTALL_PATH/home/.bitcore/data"
+CONF="$DATA/dash.conf"
+
+exec "$BIN"/dash-cli --conf="$CONF" --datadir="$DATA" "$@"
+
