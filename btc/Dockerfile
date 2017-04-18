@@ -11,7 +11,7 @@ RUN apt-get update && \
     echo 'deb https://deb.nodesource.com/node_4.x jessie main' | tee /etc/apt/sources.list.d/nodesource.list && \
     curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 RUN apt-get update && \
-    apt-get -qy install nodejs python make build-essential libzmq3-dev devscripts dh-systemd
+    apt-get -qy install nodejs python make build-essential devscripts dh-systemd
 RUN npm install -g yarn
 ADD bitcore-btc/ /root/bitcore-btc
 RUN ( cd /root/bitcore-btc && debuild -uc -us )
