@@ -9,5 +9,5 @@ Package: bitcore-btc
 Architecture: amd64
 Pre-Depends: curl, apt-transport-https
 Conflicts: bitcoind, bitcore
-Depends: nginx, ssl-cert, nodejs (>= 4), nodejs (<< 5), python, adduser, sudo, realpath
+Depends: nginx, libboost-system-dev, libboost-filesystem-dev, libboost-chrono-dev, libboost-program-options-dev, libboost-test-dev, libboost-thread-dev, libzmq3-dev, libevent-dev, ssl-cert, nodejs (>= 4), nodejs (<< 5), python, curl, adduser, realpath, sudo
 Description: Satoshilabs packaged bitcore server
