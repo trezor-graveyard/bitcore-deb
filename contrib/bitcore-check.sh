@@ -38,6 +38,9 @@ def main(bitcore_url, compare_urls):
     if height1 <= height2 - 2:
         raise Exception("%s behind %s for two or more blocks!" % (bitcore_url, compare_url))
 
+    if height1 > height2 +2:
+        raise Exception("%s forward %s for two or more blocks!" % (bitcore_url, compare_url))
+
 if __name__ == '__main__':
     if len(sys.argv) < 3:
         print("Usage: %s <bitcore_url> <compare_1_url> <compare_n_url>" % sys.argv[0])
