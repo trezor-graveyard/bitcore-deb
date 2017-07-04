@@ -1,8 +1,14 @@
+bitcore-ltc (4.3.0~satoshilabs1) unstable; urgency=medium
+
+  * Fixed parsing after Segwit activation
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Thu, 11 May 2017 09:32:40 +0200
+
 bitcore-ltc (4.2.0~satoshilabs1) unstable; urgency=medium
 
   * Added nginx configuration
 
- -- marekp <marekp@bro>  Mon, 10 Apr 2017 19:00:53 +0200
+ -- Marek Palatinus <slush@satoshilabs.com>  Mon, 10 Apr 2017 19:00:53 +0200
 
 bitcore-ltc (4.0.0~satoshilabs1) unstable; urgency=medium
 
