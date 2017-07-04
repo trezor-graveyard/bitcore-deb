@@ -50,6 +50,17 @@ Prerequisite is having github repo with forked Insight for given coin. Things ma
 * Search for all "bitcoin" strings and consider if they need to be updated for given coin.
 * Update registry below
 
+UASF
+----
+
+Bitcoin with UASF flavor is not a separate package; to use UASF-bitcoin, just add
+
+`bip148=1`
+
+to config.
+
+(Right now, even with bip148=0, the node will signal UASF. Sorry about that.)
+
 Registry of ports
 -----------------
 
