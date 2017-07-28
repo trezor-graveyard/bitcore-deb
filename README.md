@@ -45,9 +45,12 @@ Prerequisite is having github repo with forked Insight for given coin. Things ma
   * Change listening port
   * Change ports in zmqpubrawtx, zmqpubrawtx
   * Change port to bitcoind in rpcport
+* Update nginx:
+  * Change port
+  * Edit the server name
 * Add new line to debian changelog (use dch -i)
 * Modify installation procedure in bitcore-btc/Makefile, at least replace link to github repository.
-* Search for all "bitcoin" strings and consider if they need to be updated for given coin.
+* Search for all "bitcoin" and "btc" strings and consider if they need to be updated for given coin.
 * Update registry below
 
 UASF
@@ -68,7 +71,7 @@ Note about Bitcoin ABC
 
 Bitcoin ABC has the same ports to p2p network as Bitcoin. To be able to run both BTC and ABC-BTC ("bitcoin cash") on the same computer, we needed to add `nolisten=1` to abc-bitcoin config.
 
-The repos etc are named `bitcore-abc-btc` instead of `bitcore-btc-abc` so that it is not found by greping `bitcore-btc` by mistake :)
+The repos etc are named `bitcore-bcc` so grepping `bitcoin` or `btc` doesn't find it.
 
 Registry of ports
 -----------------
@@ -81,5 +84,5 @@ Registry of ports
 | regtest | 3005         | 18335    | 28335    |
 | testnet | 3002         | 18332    | 28333    |
 | zec     | 3007         |  8337    | 28337    |
-| abc-btc | 3009         |  8339    | 28339    |
-| abc-test| 3010         |  8340    | 28340    |
+| bcc     | 3009         |  8339    | 28339    |
+| tbcc    | 3010         |  8340    | 28340    |
