@@ -1,0 +1,42 @@
+server {
+    # Default targets to HTTP 444. Remove for altcoins
+
+    listen       80  default_server;
+    listen 443 ssl;
+
+    include snippets/snakeoil.conf;
+
+    server_name  _;
+    return       444;
+}
+
+
+server {
+    listen 80;
+    listen 443 ssl;
+
+    server_name ~^bitcore\d+.trezor.io$; # Delete this line for altcoins
+    server_name ~^btc-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
+
+    include snippets/snakeoil.conf;
+
+    root /home/bitcore/www;
+    access_log /var/log/nginx/bitcore-abc-testnet-access.log;
+    error_log /var/log/nginx/bitcore-abc-testnet-error.log;
+
+    location / {
+        proxy_pass http://127.0.0.1:3001;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+
+        proxy_connect_timeout       10;
+        proxy_send_timeout          10;
+        proxy_read_timeout          100; # 100s is timeout of Cloudflare
+        send_timeout                10;
+    }
+
+
+}

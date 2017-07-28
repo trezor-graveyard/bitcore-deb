@@ -1,0 +1,12 @@
+[Unit]
+Description=Satoshilabs bitcore-abc-btc
+
+[Service]
+ExecStart=/opt/satoshilabs/bitcore-abc-btc/bitcore/bin/bitcored
+Restart=always
+RestartSec=5
+User=bitcore-abc-btc
+WorkingDirectory=/opt/satoshilabs/bitcore-abc-btc/home
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,3 @@
+etc/nginx/sites-available/
+usr/local/bin
+opt/satoshilabs/bitcore-abc-testnet/home/.bitcore/

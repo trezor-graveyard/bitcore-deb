@@ -1,0 +1,6 @@
+bitcore /opt/satoshilabs/bitcore-abc-btc
+bitcore-abc-btc-cli /usr/bin
+bitcore-abc-btc-daemon /usr/bin
+bitcoin.conf /opt/satoshilabs/bitcore-abc-btc/home/.bitcore/data
+bitcore-node.json /opt/satoshilabs/bitcore-abc-btc/home/.bitcore
+nginx-bitcore-abc-btc /etc/nginx/sites-available
