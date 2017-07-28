@@ -61,6 +61,15 @@ to config.
 
 (Right now, even with bip148=0, the node will signal UASF. Sorry about that.)
 
+This means that we cannot run UASF and non-UASF on the same computer. (But we can run regular BTC/UASF-BTC and ABC on the same computer, see below.)
+
+Note about Bitcoin ABC
+----
+
+Bitcoin ABC has the same ports to p2p network as Bitcoin. To be able to run both BTC and ABC-BTC ("bitcoin cash") on the same computer, we needed to add `nolisten=1` to abc-bitcoin config.
+
+The repos etc are named `bitcore-abc-btc` instead of `bitcore-btc-abc` so that it is not found by greping `bitcore-btc` by mistake :)
+
 Registry of ports
 -----------------
 
@@ -72,3 +81,5 @@ Registry of ports
 | regtest | 3005         | 18335    | 28335    |
 | testnet | 3002         | 18332    | 28333    |
 | zec     | 3007         |  8337    | 28337    |
+| abc-btc | 3009         |  8339    | 28339    |
+| abc-test| 3010         |  8340    | 28340    |
