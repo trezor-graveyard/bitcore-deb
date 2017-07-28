@@ -1,9 +1,0 @@
-/opt/satoshilabs/bitcore-abc-btc/home/.bitcore/data/debug.log {
-        rotate 7
-        daily
-        compress
-        missingok
-        notifempty
-        copytruncate
-}
-

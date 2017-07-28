@@ -1,0 +1,12 @@
+[Unit]
+Description=Satoshilabs bitcore-bcc
+
+[Service]
+ExecStart=/opt/satoshilabs/bitcore-bcc/bitcore/bin/bitcored
+Restart=always
+RestartSec=5
+User=bitcore-bcc
+WorkingDirectory=/opt/satoshilabs/bitcore-bcc/home
+
+[Install]
+WantedBy=multi-user.target

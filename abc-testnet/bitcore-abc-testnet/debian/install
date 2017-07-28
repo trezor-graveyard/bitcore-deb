@@ -1,6 +1,0 @@
-bitcore /opt/satoshilabs/bitcore-abc-testnet
-bitcore-abc-testnet-cli /usr/bin
-bitcore-abc-testnet-daemon /usr/bin
-bitcoin.conf /opt/satoshilabs/bitcore-abc-testnet/home/.bitcore/data
-bitcore-node.json /opt/satoshilabs/bitcore-abc-testnet/home/.bitcore
-nginx-bitcore-abc-testnet /etc/nginx/sites-available

@@ -1,0 +1,6 @@
+bitcore /opt/satoshilabs/bitcore-bcc
+bitcore-bcc-cli /usr/bin
+bitcore-bcc-daemon /usr/bin
+bitcoin.conf /opt/satoshilabs/bitcore-bcc/home/.bitcore/data
+bitcore-node.json /opt/satoshilabs/bitcore-bcc/home/.bitcore
+nginx-bitcore-bcc /etc/nginx/sites-available

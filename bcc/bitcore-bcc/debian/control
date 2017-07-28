@@ -1,0 +1,13 @@
+Source: bitcore-bcc
+Section: satoshilabs
+Priority: optional
+Maintainer: slush@satoshilabs.com
+Build-Depends: nodejs (>= 4), nodejs (<< 5), make, build-essential, curl, python, dh-systemd
+Standards-Version: 3.9.5
+
+Package: bitcore-bcc
+Architecture: amd64
+Pre-Depends: curl, apt-transport-https
+Conflicts: bitcoind, bitcore
+Depends: nginx, libboost-system-dev, libboost-filesystem-dev, libboost-chrono-dev, libboost-program-options-dev, libboost-test-dev, libboost-thread-dev, libzmq3-dev, libevent-dev, ssl-cert, nodejs (>= 4), nodejs (<< 5), ntp, python, curl, adduser, realpath, sudo
+Description: Satoshilabs packaged bitcore server
