@@ -1,5 +1,5 @@
 {
-  "network": "livenet",
+  "network": "testnet",
   "port": 3010,
   "services": [
     "bitcoind",
