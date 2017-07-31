@@ -1,3 +1,9 @@
+bitcore-tbcc (4.5.1~satoshilabs1) unstable; urgency=medium
+
+  * Adding networkinfo
+
+ -- Karel Bilek <kb@karelbilek.com>  Tue, 04 Jul 2017 02:57:15 +0200
+
 bitcore-tbcc (4.5.0~satoshilabs1) unstable; urgency=medium
 
   * Adding ABC

@@ -1,6 +1,6 @@
 all:
 	git clone https://github.com/satoshilabs/bitcore
-	cd bitcore && git checkout v0.14.2-optinuasf
+	cd bitcore && git checkout 2465cb3a17fb42bdbad6c9ebd38dc23d9d360af0
 	cd bitcore && rm -rf .git # Delete .git folder to reduce space
 	cd bitcore && yarn
 	rm -rf bitcore/node_modules/bitcore-node/bin/*.gz
