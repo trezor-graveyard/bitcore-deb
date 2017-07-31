@@ -15,7 +15,7 @@ server {
     listen 80;
     listen 443 ssl;
 
-    server_name ~^bcc-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
+    server_name ~^bch-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
 
     include snippets/snakeoil.conf;
 
