@@ -1,3 +1,11 @@
+bitcore-bcc (4.6.0~satoshilabs1) unstable; urgency=medium
+
+  * Use checklevel=2 as workaround to Bitcore indexing bug
+  * Be more polite in systemd
+  * Updated nginx to show real IP
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Tue, 08 Aug 2017 14:27:15 +0200
+
 bitcore-bcc (4.5.1~satoshilabs1) unstable; urgency=medium
 
   * Adding networkinfo
