@@ -5,6 +5,7 @@ Description=Satoshilabs bitcore-regtest
 ExecStart=/opt/satoshilabs/bitcore-regtest/bitcore/bin/bitcored
 Restart=always
 RestartSec=5
+TimeoutStopSec=900
 User=bitcore-regtest
 WorkingDirectory=/opt/satoshilabs/bitcore-regtest/home
 

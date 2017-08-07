@@ -5,6 +5,7 @@ Description=Satoshilabs bitcore-ltc
 ExecStart=/opt/satoshilabs/bitcore-ltc/bitcore/bin/litecored
 Restart=always
 RestartSec=5
+TimeoutStopSec=900
 User=bitcore-ltc
 WorkingDirectory=/opt/satoshilabs/bitcore-ltc/home
 

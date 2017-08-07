@@ -5,6 +5,7 @@ Description=Satoshilabs bitcore-dash
 ExecStart=/opt/satoshilabs/bitcore-dash/bitcore/bin/bitcored
 Restart=always
 RestartSec=5
+TimeoutStopSec=900
 User=bitcore-dash
 WorkingDirectory=/opt/satoshilabs/bitcore-dash/home
 

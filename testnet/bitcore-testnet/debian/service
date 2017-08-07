@@ -5,6 +5,7 @@ Description=Satoshilabs bitcore-testnet
 ExecStart=/opt/satoshilabs/bitcore-testnet/bitcore/bin/bitcored
 Restart=always
 RestartSec=5
+TimeoutStopSec=900
 User=bitcore-testnet
 WorkingDirectory=/opt/satoshilabs/bitcore-testnet/home
 

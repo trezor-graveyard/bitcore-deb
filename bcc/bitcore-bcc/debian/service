@@ -5,6 +5,7 @@ Description=Satoshilabs bitcore-bcc
 ExecStart=/opt/satoshilabs/bitcore-bcc/bitcore/bin/bitcored
 Restart=always
 RestartSec=5
+TimeoutStopSec=900
 User=bitcore-bcc
 WorkingDirectory=/opt/satoshilabs/bitcore-bcc/home
 
