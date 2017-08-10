@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+INSTALL_PATH="/opt/satoshilabs/bitcore-zec/"
+BIN=$(realpath "$INSTALL_PATH"/bitcore/bin/)
+DATA="$INSTALL_PATH/home/.bitcore/data"
+CONF="$DATA/zcash.conf"
+
+exec sudo -u bitcore-zec "$BIN/zcashd" --conf="$CONF" --datadir="$DATA" "$@"
+

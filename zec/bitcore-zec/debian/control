@@ -1,0 +1,13 @@
+Source: bitcore-zec
+Section: satoshilabs
+Priority: optional
+Maintainer: slush@satoshilabs.com
+Build-Depends: nodejs (>= 4), nodejs (<< 5), make, build-essential, curl, python, dh-systemd
+Standards-Version: 3.9.5
+
+Package: bitcore-zec
+Architecture: amd64
+Pre-Depends: curl, apt-transport-https
+Conflicts: bitcoind, bitcore
+Depends: nginx, libstdc++6, ssl-cert, nodejs (>= 4), nodejs (<< 5), python, adduser, sudo
+Description: Satoshilabs packaged bitcore server

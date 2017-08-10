@@ -1,0 +1,22 @@
+#! /bin/sh -e
+
+case "$1" in
+	configure)
+		adduser --system --home /opt/satoshilabs/bitcore-zec/home \
+			--quiet --gecos "satoshilabs bitcore-zec" bitcore-zec
+		chown -R bitcore-zec /opt/satoshilabs/bitcore-zec/home
+        HOME=/opt/satoshilabs/bitcore-zec/home zec-fetch-params.sh
+		;;
+	abort-upgrade|abort-remove|abort-deconfigure)
+	;;
+	
+	*)
+	    echo "postinst called with unknown argument \`$1'" >&2
+	    exit 1
+	;;
+esac
+
+
+#DEBHELPER#
+
+exit 0

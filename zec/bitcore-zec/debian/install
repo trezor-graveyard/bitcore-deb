@@ -1,0 +1,7 @@
+bitcore /opt/satoshilabs/bitcore-zec
+bitcore-zec-cli /usr/bin
+bitcore-zec-daemon /usr/bin
+zec-fetch-params.sh /usr/bin
+zcash.conf /opt/satoshilabs/bitcore-zec/home/.bitcore/data
+bitcore-node.json /opt/satoshilabs/bitcore-zec/home/.bitcore
+nginx-bitcore-zec /etc/nginx/sites-available

@@ -1,0 +1,13 @@
+[Unit]
+Description=Satoshilabs bitcore-zec
+
+[Service]
+ExecStart=/opt/satoshilabs/bitcore-zec/bitcore/bin/bitcore-node start /opt/satoshilabs/bitcore-zec/home/.bitcore/
+Restart=always
+RestartSec=5
+TimeoutStopSec=900
+User=bitcore-zec
+WorkingDirectory=/opt/satoshilabs/bitcore-zec/home
+
+[Install]
+WantedBy=multi-user.target

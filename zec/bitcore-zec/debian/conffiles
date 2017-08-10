@@ -1,0 +1,3 @@
+/opt/satoshilabs/bitcore-zec/home/.bitcore/data/zcash.conf
+/opt/satoshilabs/bitcore-zec/home/.bitcore/bitcore-node.json
+/etc/nginx/sites-available/nginx-bitcore-zec
