@@ -1,4 +1,4 @@
-erver {
+server {
     listen 80;
     listen 443 ssl;
 
@@ -11,7 +11,7 @@ erver {
     error_log /var/log/nginx/bitcore-btc-error.log;
 
     location / {
-        proxy_pass http://127.0.0.1:3001;
+        proxy_pass http://127.0.0.1:3007;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
