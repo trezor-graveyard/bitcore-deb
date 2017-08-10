@@ -2,7 +2,7 @@
 Description=Satoshilabs bitcore-zec
 
 [Service]
-ExecStart=/opt/satoshilabs/bitcore-zec/bitcore/bin/bitcore-node start /opt/satoshilabs/bitcore-zec/home/.bitcore/
+ExecStart=/opt/satoshilabs/bitcore-zec/bitcore/bin/bitcored
 Restart=always
 RestartSec=5
 TimeoutStopSec=900

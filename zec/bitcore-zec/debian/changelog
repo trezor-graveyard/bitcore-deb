@@ -1,3 +1,9 @@
+bitcore-zec (4.5.0~satoshilabs1) unstable; urgency=medium
+
+  * Correcting npm packages
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Wed, 10 Aug 2017 19:24:33 +0200
+
 bitcore-zec (4.4.0~satoshilabs1) unstable; urgency=medium
 
   * Use zcashd v1.0.11-rc1-bitcore
