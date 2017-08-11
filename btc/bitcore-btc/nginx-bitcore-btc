@@ -7,7 +7,7 @@ server {
     include snippets/snakeoil.conf;
 
     server_name  _;
-    return       444;
+    return       403;
 }
 
 
