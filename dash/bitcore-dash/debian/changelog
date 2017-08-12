@@ -1,3 +1,9 @@
+bitcore-dash (4.2.2~satoshilabs1) unstable; urgency=medium
+
+  * Fixed robots.txt
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Sat, 12 Aug 2017 15:13:17 +0200
+
 bitcore-dash (4.2.1~satoshilabs1) unstable; urgency=medium
 
   * Adapted for DASH

@@ -1,3 +1,9 @@
+bitcore-btc (4.5.2~satoshilabs1) unstable; urgency=medium
+
+  * Fixed robots.txt
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Sat, 12 Aug 2017 15:12:24 +0200
+
 bitcore-btc (4.5.1~satoshilabs1) unstable; urgency=medium
 
   * Adding networkinfo + new uasf (better uacomment)

@@ -1,3 +1,9 @@
+bitcore-ltc (4.3.1~satoshilabs1) unstable; urgency=medium
+
+  * Fixed robots.txt
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Sat, 12 Aug 2017 15:13:54 +0200
+
 bitcore-ltc (4.3.0~satoshilabs1) unstable; urgency=medium
 
   * Fixed parsing after Segwit activation
