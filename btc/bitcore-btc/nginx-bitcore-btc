@@ -1,5 +1,5 @@
 server {
-    # Default targets to HTTP 444. Remove for altcoins
+    # Default targets to HTTP 403. Remove for altcoins
 
     listen       80  default_server;
     listen 443 ssl;
@@ -15,7 +15,7 @@ server {
     listen 80;
     listen 443 ssl;
 
-    server_name ~^bitcore\d+.trezor.io$; # Delete this line for altcoins
+    # server_name ~^bitcore\d+.trezor.io$; # Delete this line for altcoins
     server_name ~^btc-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
 
     include snippets/snakeoil.conf;

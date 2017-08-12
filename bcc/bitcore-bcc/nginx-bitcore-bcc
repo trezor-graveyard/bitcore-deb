@@ -1,5 +1,5 @@
 server {
-    # Default targets to HTTP 444. Remove for altcoins
+    # Default targets to HTTP 403. Remove for altcoins
 
     listen       80  default_server;
     listen 443 ssl;
