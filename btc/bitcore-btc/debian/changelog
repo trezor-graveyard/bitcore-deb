@@ -1,3 +1,10 @@
+bitcore-btc (4.6.0~satoshilabs1) unstable; urgency=medium
+
+  * Update to Core 0.15.0
+  * Added smart fees
+
+ -- Marek Palatinus <slush@satoshilabs.com>  Sat, 12 Aug 2017 15:12:24 +0200
+
 bitcore-btc (4.5.2~satoshilabs1) unstable; urgency=medium
 
   * Fixed robots.txt
