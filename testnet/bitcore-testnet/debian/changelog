@@ -3,6 +3,9 @@ bitcore-testnet (4.6.0~satoshilabs1) unstable; urgency=medium
   * Update to Core 0.15.0
   * Added smart fees
 
+ -- Karel Bilek <kb@karelbilek.com>  Sat, 01 Oct 2017 15:15:46 +0200
+
+
 bitcore-testnet (4.5.2~satoshilabs1) unstable; urgency=medium
 
   * Fixed robots.txt
