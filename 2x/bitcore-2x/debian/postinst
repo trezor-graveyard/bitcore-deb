@@ -1,0 +1,21 @@
+#! /bin/sh -e
+
+case "$1" in
+	configure)
+		adduser --system --home /opt/satoshilabs/bitcore-2x/home \
+			--quiet --gecos "satoshilabs bitcore-2x" bitcore-2x
+		chown -R bitcore-2x /opt/satoshilabs/bitcore-2x/home
+		;;
+	abort-upgrade|abort-remove|abort-deconfigure)
+	;;
+	
+	*)
+	    echo "postinst called with unknown argument \`$1'" >&2
+	    exit 1
+	;;
+esac
+
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,13 @@
+[Unit]
+Description=Satoshilabs bitcore-2x
+
+[Service]
+ExecStart=/opt/satoshilabs/bitcore-2x/bitcore/bin/bitcored
+Restart=always
+RestartSec=5
+TimeoutStopSec=900
+User=bitcore-2x
+WorkingDirectory=/opt/satoshilabs/bitcore-2x/home
+
+[Install]
+WantedBy=multi-user.target

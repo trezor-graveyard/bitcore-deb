@@ -1,0 +1,3 @@
+/opt/satoshilabs/bitcore-2x/home/.bitcore/data/bitcoin.conf
+/opt/satoshilabs/bitcore-2x/home/.bitcore/bitcore-node.json
+/etc/nginx/sites-available/nginx-bitcore-2x

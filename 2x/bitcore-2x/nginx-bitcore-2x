@@ -1,0 +1,71 @@
+server {
+    # Default targets to HTTP 403. Remove for altcoins
+
+    listen       80  default_server;
+    listen 443 ssl;
+
+    include snippets/snakeoil.conf;
+
+    server_name  _;
+    return       403;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+
+    server_name ~^2x-bitcore\d+.trezor.io$; # Alter URL to corresponding coin
+
+    include snippets/snakeoil.conf;
+
+    root /home/bitcore/www;
+    access_log /var/log/nginx/bitcore-2x-access.log;
+    error_log /var/log/nginx/bitcore-2x-error.log;
+
+    location / {
+        proxy_pass http://127.0.0.1:3011;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+
+        proxy_connect_timeout       10;
+        proxy_send_timeout          10;
+        proxy_read_timeout          100; # 100s is timeout of Cloudflare
+        send_timeout                10;
+    }
+
+    location /robots.txt {
+       add_header Content-Type text/plain;
+       return 200 "User-agent: *\nDisallow: /\n";
+    }
+
+    set_real_ip_from 103.21.244.0/22;
+    set_real_ip_from 103.22.200.0/22;
+    set_real_ip_from 103.31.4.0/22;
+    set_real_ip_from 104.16.0.0/12;
+    set_real_ip_from 108.162.192.0/18;
+    set_real_ip_from 131.0.72.0/22;
+    set_real_ip_from 141.101.64.0/18;
+    set_real_ip_from 162.158.0.0/15;
+    set_real_ip_from 172.64.0.0/13;
+    set_real_ip_from 173.245.48.0/20;
+    set_real_ip_from 188.114.96.0/20;
+    set_real_ip_from 190.93.240.0/20;
+    set_real_ip_from 197.234.240.0/22;
+    set_real_ip_from 198.41.128.0/17;
+    set_real_ip_from 199.27.128.0/21;
+    set_real_ip_from 2400:cb00::/32;
+    set_real_ip_from 2606:4700::/32;
+    set_real_ip_from 2803:f800::/32;
+    set_real_ip_from 2405:b500::/32;
+    set_real_ip_from 2405:8100::/32;
+    set_real_ip_from 2c0f:f248::/32;
+    set_real_ip_from 2a06:98c0::/29;
+
+    # use any of the following two
+    real_ip_header CF-Connecting-IP;
+    #real_ip_header X-Forwarded-For;
+
+}

@@ -1,0 +1,18 @@
+#! /bin/sh -e
+
+case "$1" in
+	install|upgrade)
+		echo '# installed by bitcore-2x package' > /etc/apt/sources.list.d/bitcore-nodesource.list
+		echo 'deb https://deb.nodesource.com/node_4.x jessie main' >> /etc/apt/sources.list.d/bitcore-nodesource.list
+		curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+		;;
+	abort-upgrade)
+	;;
+	*)
+	    echo "preinst called with unknown argument \`$1'" >&2
+	    exit 1
+	;;
+esac
+
+exit 0
+
