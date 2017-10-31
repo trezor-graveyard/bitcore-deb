@@ -2,7 +2,7 @@
 Description=Satoshilabs bitcore-btc
 
 [Service]
-ExecStart=/opt/satoshilabs/bitcore-btc/bitcore/bin/bitcored
+ExecStart=/usr/bin/env nodejs --max_old_space_size=4096 /opt/satoshilabs/bitcore-btc/bitcore/bin/bitcored
 Restart=always
 RestartSec=5
 TimeoutStopSec=900
