@@ -1,0 +1,6 @@
+bitcore /opt/satoshilabs/bitcore-btg
+bitcore-btg-cli /usr/bin
+bitcore-btg-daemon /usr/bin
+bitcoin.conf /opt/satoshilabs/bitcore-btg/home/.bitcore/data
+bitcore-node.json /opt/satoshilabs/bitcore-btg/home/.bitcore
+nginx-bitcore-btg /etc/nginx/sites-available

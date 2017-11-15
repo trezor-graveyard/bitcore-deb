@@ -1,0 +1,3 @@
+/opt/satoshilabs/bitcore-btg/home/.bitcore/data/bitcoin.conf
+/opt/satoshilabs/bitcore-btg/home/.bitcore/bitcore-node.json
+/etc/nginx/sites-available/nginx-bitcore-btg

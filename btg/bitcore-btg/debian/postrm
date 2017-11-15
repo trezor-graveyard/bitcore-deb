@@ -1,0 +1,8 @@
+#! /bin/sh -e
+
+case "$1" in
+	purge)
+		deluser bitcore-btg || true
+		;;
+esac
+
