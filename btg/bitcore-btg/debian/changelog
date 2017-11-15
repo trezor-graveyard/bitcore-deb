@@ -1,3 +1,10 @@
+bitcore-btg (4.7.1~satoshilabs1) unstable; urgency=medium
+
+  * Fixed equihash nonce
+  * Fixed address versions
+
+ -- Karel Bilek <kb@karelbilek.com>  Wed, 15 Nov 2017 20:38:30 +0100
+
 bitcore-btg (4.7.0~satoshilabs1) unstable; urgency=medium
 
   * Added BGold
