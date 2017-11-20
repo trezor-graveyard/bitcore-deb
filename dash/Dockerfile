@@ -12,7 +12,7 @@ RUN apt-get update && \
     curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 RUN apt-get update && \
     apt-get -qy install nodejs python make build-essential libzmq3-dev devscripts dh-systemd
-RUN npm install -g yarn
+RUN apt-get -qy install dos2unix
 ADD bitcore-dash/ /root/bitcore-dash
 RUN ( cd /root/bitcore-dash && debuild -uc -us )
 
