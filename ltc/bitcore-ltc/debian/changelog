@@ -1,3 +1,10 @@
+bitcore-ltc (4.4.0~satoshilabs1) UNRELEASED; urgency=medium
+
+  * Change Debian support from Jessie to Stretch. Change libzmq
+    dependency to libzmq5.
+
+ -- Vaclav Sedivy <vaclav.sedivy@satoshilabs.com>  Tue, 21 Nov 2017 10:51:13 +0100
+
 bitcore-ltc (4.3.1~satoshilabs1) unstable; urgency=medium
 
   * Fixed robots.txt
