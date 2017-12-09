@@ -7,13 +7,19 @@
     "insight-api",
     "insight-ui"
   ],
+  "allowedOriginRegexp": "^https://(.+\\.)*trezor\\.io$",
   "servicesConfig": {
+    "web": {
+      "disablePolling": true
+    },
     "insight-ui": {
       "routePrefix": "",
       "apiPrefix": "api"
     },
     "insight-api": {
-      "routePrefix": "api"
+      "routePrefix": "api",
+      "coinTicker" : "https://api.coinmarketcap.com/v1/ticker/bitcoin-cash/?convert=USD",
+      "coinShort": "BCH"
     },
     "bitcoind": {
       "sendTxLog": "/opt/satoshilabs/bitcore-bcc/home/.bitcore/pushtx.log",
