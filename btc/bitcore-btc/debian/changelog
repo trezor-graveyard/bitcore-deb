@@ -1,3 +1,9 @@
+bitcore-btc (4.7.3~satoshilabs1) unstable; urgency=medium
+
+  * Enable logging for performance tests
+
+ -- Martin Bohm <martin.bohm@satoshilabs.com>  Wed, 11 Apr 2018 17:29:00 +0200
+
 bitcore-btc (4.7.2~satoshilabs1) unstable; urgency=medium
 
   * Add filtering API by origin + GUI changes

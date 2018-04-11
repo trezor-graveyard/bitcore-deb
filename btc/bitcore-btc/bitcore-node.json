@@ -8,6 +8,7 @@
     "insight-ui"
   ],
   "allowedOriginRegexp": "^https://(.+\\.)*trezor\\.io$",
+  "messageLog": "",
   "servicesConfig": {
     "web": {
       "disablePolling": true
