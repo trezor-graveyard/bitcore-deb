@@ -1,3 +1,7 @@
+**THIS IS OBSOLETE**
+
+We are building new system for coin backends - https://github.com/jpochyla/blockbook . This is here for historical reasons.
+
 Bitcore-deb
 ===========
 
